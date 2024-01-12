@@ -1,0 +1,29 @@
+\documentclass[14pt,a4paper,report]{ncc}
+\usepackage[a4paper, mag=1000, left=2.5cm, right=1cm, top=2cm, bottom=2cm, headsep=0.7cm, footskip=0cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{natbib}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{amsmath}
+
+\pagestyle{plain}
+\setcounter{secnumdepth}{-1}
+
+\lstset{
+    basicstyle=\fontsize{0.6em}{0.6em}\ttfamily
+}
+
+\input{\jobname/../common/docs/data}
+\input{\jobname/docs/data}
+
+\begin{document}
+
+    \input{\jobname/../common/docs/title}
+
+    \newpage
+
+    \input{\jobname/docs/report}
+
+\end{document}

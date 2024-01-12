@@ -1,0 +1,28 @@
+1.40 °C
+
+2. ноги
+
+3. 110
+
+4. 4
+
+5.
+Значимые взаимодействия наблюдались по всем параметрам, кроме INIT и LAT
+
+Уменьшились 
+- INIT (изначальный размер зрачка), 
+- END  (minimum pupil size at the end of light stimulus - минимальный размер зрачка в конце светового стимула)
+ - ADV (averaged dilation velocity - средняя скорость расширения)
+
+увеличились :
+-  ACV (averaged constriction velocity - средняя скорость сужения), 
+- MCV (max constriction velocity - максимальная скорость сужения) 
+ - DELTA (constriction ratio defined as the difference between the initial and minimum size divided by the initial pupil size - коэффициент сужения, определяемый как разница между начальным и минимальным размером, деленная на начальный размер зрачка). 
+
+- Уменьшение значений параметров HRV (heart rate variability - вариабельность сердечного ритма)
+
+
+6. 
+увеличилось SDNN (standard deviation of normal NN intervals -стандартное отклонение нормальных интервалов NN) (p> 0.001), но без изменения rMSSD (root mean square of successive differences - среднеквадратичное значение последовательных разностей) и pNN5O (percentage of adjacent NN intervals that differ from each other by more than 50 ms - процент соседних NN интервалов, отличающихся друг от друга более чем на 50 мс)
+
+также показали достоверные различия LF (value10:56 AM 3/9/2023s of low frequency - значения низкой частоты) и  HF (values of high frequency - значения высокой частоты).
