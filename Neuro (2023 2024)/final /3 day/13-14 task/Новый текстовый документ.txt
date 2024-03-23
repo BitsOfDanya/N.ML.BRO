@@ -1,0 +1,17 @@
+import serial
+import time
+# Установка соответствующего COM порта и скорости передачи данных (baud rate)
+arduino_port = 'COM4'  # замените на свой COM портbaud_rate = 115200
+# Создание объекта Serial для взаимодействия с Arduino
+arduino = serial.Serial(arduino_port, 115200, timeout=1)
+# Подождем несколько секунд для установления связиtime.sleep(2)
+try:
+    while True:        # Чтение данных из порта Arduino
+        try:            
+            line = arduino.readline().decode("ascii").rstrip()
+            print("Получено от Arduino:", line)        
+        except UnicodeDecodeError:
+            print("Ошибка декодирования данных")
+except KeyboardInterrupt:
+    print("Программа остановлена пользователем")    
+    arduino.close()

@@ -31,7 +31,7 @@ def spectrum(y, Fs=256):
 def neur():
     global X, y
     # разделение масивов и перемешивание для обучения и тестирования
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.9, random_state=50, shuffle=True)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=1.5 , random_state=50, shuffle=True)
     res = []
 
     # перебирание моделей классификаторов
@@ -60,10 +60,7 @@ with open('AlexBRL.csv', "r") as f:
     brl = np.rot90(np.array([list(map(float, i)) for i in list(csv.reader(f, delimiter=';'))]), -1)[1:]
 with open('AlexEEG.csv', "r") as f:
     eeg = np.rot90(np.array([list(map(float, i)) for i in list(csv.reader(f, delimiter=';'))]), -1)[1:]
-with open('AlexEKG.csv', "r") as f:
-    fpg = np.rot90(np.array([list(map(float, i)) for i in list(csv.reader(f, delimiter=';'))]), -1)[1:]
-with open('AlexKGR.csv', "r") as f:
-    kgr = np.rot90(np.array([list(map(float, i)) for i in list(csv.reader(f, delimiter=';'))]), -1)[1:]
+
 
 # In[преобразование дынных в масивы X и Y]:
 Х = []
